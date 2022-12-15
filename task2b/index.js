@@ -9,51 +9,48 @@ function multiply(num1, operator, num2) {
   } else {
     return 'not valid operator'
   }
- 
 }
 
 function hasPets(hasPet, firstName, lastName) {
-  if (hasPet === "true") {
+  if (hasPet === true) {
     return firstName + " " + lastName + " really does have a nice pet";
   } else {
-    return;
-    firstName + " " + lastName + " " + "has no pets";
+    return firstName + " " + lastName + " " + "has no pets";
   }
 }
 
 let myAccountNumbers = {
-  account1: "220",
+  account1: 220,
   account2: 144,
   account3: 12,
-  account4: 1443,
+  account4: 1443
 };
 
 function addsBalanceOfAccounts() {
-  let firstAccount = myAccountNumbers[1];
-  let secondAccount = myAccountNumbers["account3"];
+  let firstAccount = myAccountNumbers.account1;
+  let secondAccount = myAccountNumbers.account2;
   return firstAccount + secondAccount;
 }
 
 function calculator(firstNumber, operator, secondNumber) {
   if (operator === "+") {
     let answer = firstNumber + secondNumber;
-    return;
+    return answer;
   }
   if (operator === "-") {
     let answer = firstNumber - secondNumber;
-    return;
+    return answer;
   }
   if (operator === "*") {
     let answer = firstNumber * secondNumber;
-    return;
+    return answer;
   }
   if (operator === "/") {
     let answer = firstNumber / secondNumber;
-    return;
+    return answer;
   } else {
     let answer = "Invalid inputs. Try again!";
-    return;
-    answer;
+    return answer;
   }
 }
 
