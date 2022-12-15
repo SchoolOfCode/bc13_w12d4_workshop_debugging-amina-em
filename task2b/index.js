@@ -1,10 +1,15 @@
 function add(numb1, numb2) {
-  let num1 = String(numb1);
-  return num1 + numb2;
+  return numb1 + numb2;
 }
 
 function multiply(num1, operator, num2) {
-  num1, operator, num2;
+  // no need to take in an operator as this function is just multiplying two numbers 
+  if(operator === '*'){
+    return num1 * num2;
+  } else {
+    return 'not valid operator'
+  }
+ 
 }
 
 function hasPets(hasPet, firstName, lastName) {
